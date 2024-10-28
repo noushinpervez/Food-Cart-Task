@@ -9,6 +9,7 @@ module.exports = {
         textColor: "#070707",
         disabled: "#5e6571",
         light: "#eeeeee",
+        hover: "#454d56",
       },
     },
   },
