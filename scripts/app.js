@@ -20,6 +20,7 @@ dropdownButton.addEventListener("click", () => {
 const cartSidebar = document.getElementById("cartSidebar");
 const cartItemsContainer = document.getElementById("cartItems");
 const itemCountDisplay = document.getElementById("itemCount");
+const bagCountDisplay = document.getElementById("bagCount");
 const totalAmountDisplay = document.getElementById("totalAmount");
 
 let cartItems = [];
@@ -109,6 +110,7 @@ function updateCart() {
 
   // Update the displayed item count and total amount
   itemCountDisplay.innerText = cartItems.length;
+  bagCountDisplay.innerText = cartItems.length;
   totalAmountDisplay.innerText = totalAmount;
 }
 

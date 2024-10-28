@@ -61,7 +61,7 @@
             <button class="relative px-1.5" onclick="toggleSidebar()">
               <img class="w-8 h-8" src="./resources/bag.png" alt="Bag icon" />
               <!-- Cart Count Badge -->
-              <span class="absolute top-0 right-0 -mt-1 mr-1 bg-primary text-light text-[10px] px-2 py-1 rounded-md">1</span>
+              <span id="bagCount" class="absolute top-0 right-0 -mt-1 mr-1 bg-primary text-light text-[10px] px-2 py-1 rounded-md">0</span>
             </button>
             <!-- Order Now Button -->
             <button class="py-3 md:px-7 px-4 bg-primary hover:bg-disabled text-xs text-light font-bold rounded-md transition duration-300 uppercase">Order Now</button>
@@ -184,8 +184,8 @@
     <!-- Sidebar for Cart -->
     <div id="cartSidebar" class="fixed top-0 right-0 w-72 h-full bg-primary text-light flex flex-col transition-transform duration-300 ease-in-out z-50 translate-x-full">
       <div class="px-2 py-3 flex items-center justify-between bg-light text-primary">
-        <div class="flex items-center space-x-2">
-          <img class="w-5 h-5" src="./resources/bag-primary.png" alt="Bag icon" />
+        <div class="flex items-center space-x-1.5">
+          <img class="w-4 h-4" src="./resources/bag-primary.png" alt="Bag icon" />
           <h2 class="font-semibold text-lg"><span id="itemCount">0</span> Items</h2> <!-- Initialize itemCount -->
         </div>
         <button class="border border-primary rounded-md py-0.5 px-1 text-sm" onclick="toggleSidebar()" aria-label="Close Cart Sidebar">Close</button>
@@ -194,7 +194,7 @@
         <!-- Cart items will be injected here -->
       </div>
       <div class="bg-light">
-        <button class="w-full p-4 text-primary font-semibold hover:bg-primary hover:text-light transition-all" id="placeOrderBtn">Place Order<span id="totalAmount">0</span>$</button>
+        <button class="w-full p-4 text-primary font-semibold hover:bg-primary hover:text-light transition-all" id="placeOrderBtn">Place Order <span id="totalAmount" class="font-bold ml-2">0</span> $</button>
       </div>
     </div>
   </main>
