@@ -86,8 +86,8 @@
     </nav>
   </header>
   <!-- Content Section -->
-  <main class="text-center max-w-5xl mx-auto px-4 mt-4">
-    <h2 class="font-semibold text-3xl text-primary uppercase">Chicken Crisper® Combos</h2>
+  <main class="max-w-[70%] mx-auto px-4 mt-4">
+    <h2 class="font-semibold text-3xl text-center text-primary uppercase">Chicken Crisper® Combos</h2>
     <!-- Navigation Links -->
     <div class="flex items-center justify-center py-3 text-xs overflow-x-auto whitespace-nowrap">
       <a href="#" class="text-primary">Menu</a>
@@ -101,9 +101,9 @@
       <a href="#" class="hover:underline hover:underline-offset-4">Chicken Crisper® Combos</a>
     </div>
     <!-- Description Paragraph -->
-    <p>Find everything from our Big Mouth Burgers®, our always sizzling, Full-on Fajitas, and our famous Chicken Crispers®</p>
+    <p class="text-center">Find everything from our Big Mouth Burgers®, our always sizzling, Full-on Fajitas, and our famous Chicken Crispers®</p>
     <!-- Dropdown Menu Section -->
-    <div class="flex items-center justify-end text-sm text-disabled mt-10">
+    <div class="flex items-center justify-end text-sm text-disabled my-10 max-w-5xl">
       <div class="relative inline-block text-left">
         <!-- Dropdown Button -->
         <button id="dropdown-button"
@@ -118,6 +118,63 @@
             <a class="flex rounded-md px-4 py-2 text-sm hover:bg-primary active:bg-primary cursor-pointer hover:text-light" role="menuitem">Menu Item 1</a>
             <a class="flex rounded-md px-4 py-2 text-sm hover:bg-primary active:bg-primary cursor-pointer hover:text-light" role="menuitem">Menu Item 2</a>
           </div>
+        </div>
+      </div>
+    </div>
+    <!-- Food cards -->
+    <div class="grid grid-cols-4 gap-1.5">
+      <!-- Start of Card Component -->
+      <div class="relative max-w-80 p-3 bg-headerBg rounded-md">
+        <!-- NEW Badge -->
+        <div class="absolute -top-3 -left-6 bg-primary text-light text-xs font-bold py-1.5 px-4 rounded-full transform -rotate-45">NEW</div>
+        <!-- Food Image -->
+        <img class="object-cover w-full h-36 rounded-md" src="./resources/img1.avif" alt="Chicken Fajitas">
+        <!-- Food Details -->
+        <div class="mt-4">
+          <a href="#" class="text-lg font-semibold hover:underline hover:underline-offset-4" tabindex="0" role="link">Chicken</a>
+          <p class="text-sm">69$/each</p>
+          <p class="mt-4 text-sm line-clamp-3 text-justify tracking-tighter text-disabled"> Chicken Fajitas served with rice and beans, tortillas, guacamole, salsa, and sour cream Chicken
+            Fajitas served with french fries. </p>
+        </div>
+        <!-- Action Buttons -->
+        <div class="flex flex-col gap-2 mt-6">
+          <button class="w-full text-light bg-primary rounded-md py-1 hover:bg-disabled transition-all duration-300 ease-in-out" aria-label="Add Chicken to Order">Add to Order</button>
+          <button class="w-full text-primary border-2 border-primary rounded-md py-1 hover:bg-primary hover:text-light font-semibold transition-all duration-300 ease-in-out"
+            aria-label="Customize Chicken Order">Customize</button>
+        </div>
+      </div>
+      <!-- End of Card Component -->
+      <!-- Repeat Card Component Structure for Card 2 and Card 3 -->
+      <!-- Card 2 -->
+      <div class="relative max-w-80 p-3 bg-headerBg rounded-md">
+        <img class="object-cover w-full h-36 rounded-md" src="./resources/img2.avif" alt="Fajitas">
+        <div class="mt-4">
+          <a href="#" class="text-lg font-semibold hover:underline hover:underline-offset-4" tabindex="0" role="link">Fajitas</a>
+          <p class="text-sm">169$/each</p>
+          <p class="mt-4 text-sm line-clamp-3 text-justify tracking-tight text-disabled"> Chicken Fajitas served with rice and beans, tortillas, guacamole, salsa, and sour cream Chicken
+            Fajitas served with french fries. </p>
+        </div>
+        <div class="flex flex-col gap-2 mt-6">
+          <button class="w-full text-light bg-primary rounded-md py-1 hover:bg-disabled transition-all duration-300 ease-in-out" aria-label="Add Fajitas to Order">Add to Order</button>
+          <button class="w-full text-primary border-2 border-primary rounded-md py-1 hover:bg-primary hover:text-light font-semibold transition-all duration-300 ease-in-out"
+            aria-label="Customize Fajitas Order">Customize</button>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="relative max-w-80 p-3 bg-headerBg rounded-md">
+        <div class="absolute -top-3 -left-6 bg-primary text-light text-xs font-bold py-1.5 px-4 rounded-full transform -rotate-45">NEW</div>
+        <img class="object-cover w-full h-36 rounded-md" src="./resources/img3.avif" alt="Chicken Masala">
+        <div class="mt-4">
+          <a href="#" class="text-lg font-semibold hover:underline hover:underline-offset-4" tabindex="0" role="link">Chicken Masala</a>
+          <p class="text-sm">269$/each</p>
+          <p class="mt-4 text-sm line-clamp-3 text-justify tracking-tight text-disabled"> Chicken Fajitas served with rice and beans, tortillas, guacamole, salsa, and sour cream Chicken
+            Fajitas served with french fries. </p>
+        </div>
+        <div class="flex flex-col gap-2 mt-6">
+          <button class="w-full text-light bg-primary rounded-md py-1 hover:bg-disabled transition-all duration-300 ease-in-out" aria-label="Add Chicken Masala to Order">Add to
+            Order</button>
+          <button class="w-full text-primary border-2 border-primary rounded-md py-1 hover:bg-primary hover:text-light font-semibold transition-all duration-300 ease-in-out"
+            aria-label="Customize Chicken Masala Order">Customize</button>
         </div>
       </div>
     </div>
